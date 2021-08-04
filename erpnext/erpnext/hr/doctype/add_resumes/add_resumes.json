@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "creation": "2021-07-18 11:45:57.803291",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source",
+  "resume"
+ ],
+ "fields": [
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source",
+   "options": "Job Applicant Source"
+  },
+  {
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Resume"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-28 09:55:53.083657",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Add resumes",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

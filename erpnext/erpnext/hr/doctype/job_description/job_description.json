@@ -1,0 +1,235 @@
+{
+ "actions": [],
+ "autoname": "JOBD.####",
+ "creation": "2021-07-18 11:39:22.600447",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_title",
+  "job_category",
+  "department",
+  "requisition_id",
+  "location",
+  "travel_required_percentage",
+  "min_salary",
+  "max_salary",
+  "position_type",
+  "hr_spoc",
+  "date_posted",
+  "training_required",
+  "posting_expire",
+  "external_posting_url",
+  "internal_posting_url",
+  "company_email",
+  "recruiter_email",
+  "total_experience",
+  "relevant_experience",
+  "subject",
+  "key_responsibilites",
+  "education_and_qualification",
+  "preferred_skills",
+  "reviewed_by",
+  "reviewed_date",
+  "approved_by",
+  "approved_date",
+  "last_updated_by",
+  "last_updated_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "hr_spoc",
+   "fieldtype": "Link",
+   "label": "HR Spoc",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "job_category",
+   "fieldtype": "Select",
+   "label": "Job Category",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "position_type",
+   "fieldtype": "Select",
+   "label": "Position Type",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "travel_required_percentage",
+   "fieldtype": "Data",
+   "label": "Travel Required Percentage"
+  },
+  {
+   "fieldname": "training_required",
+   "fieldtype": "Select",
+   "label": "Training Required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "total_experience",
+   "fieldtype": "Data",
+   "label": "Total Experience"
+  },
+  {
+   "fieldname": "relevant_experience",
+   "fieldtype": "Data",
+   "label": "Relevant Experience"
+  },
+  {
+   "fieldname": "date_posted",
+   "fieldtype": "Date",
+   "label": "Date Posted"
+  },
+  {
+   "fieldname": "min_salary",
+   "fieldtype": "Data",
+   "label": "Min Salary"
+  },
+  {
+   "fieldname": "max_salary",
+   "fieldtype": "Data",
+   "label": "Max Salary"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "key_responsibilites",
+   "fieldtype": "Small Text",
+   "label": "Roles and Responsibilities"
+  },
+  {
+   "fieldname": "education_and_qualification",
+   "fieldtype": "Small Text",
+   "label": "Education and Qualification"
+  },
+  {
+   "fieldname": "preferred_skills",
+   "fieldtype": "Small Text",
+   "label": "Preferred Skills"
+  },
+  {
+   "fieldname": "external_posting_url",
+   "fieldtype": "Data",
+   "label": "External Posting URL"
+  },
+  {
+   "fieldname": "internal_posting_url",
+   "fieldtype": "Data",
+   "label": "Internal Posting URL"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Company Email"
+  },
+  {
+   "fieldname": "recruiter_email",
+   "fieldtype": "Data",
+   "label": "Recruiter Email"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "last_updated_by",
+   "fieldtype": "Link",
+   "label": "Last Updated By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "last_updated_date",
+   "fieldtype": "Date",
+   "label": "Last Updated Date",
+   "no_copy": 1,
+   "options": "Requisition Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Description",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "requisition_id",
+   "fieldtype": "Link",
+   "label": "Requisition ID",
+   "options": "Requisition Request"
+  },
+  {
+   "fieldname": "posting_expire",
+   "fieldtype": "Date",
+   "label": "Posting Expire"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "reviewed_date",
+   "fieldtype": "Date",
+   "label": "Reviewed Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-28 08:42:00.685375",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Job Description",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "job_title",
+ "track_changes": 1
+}

@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 17:28:06.869975",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "net_purchase_value_without_gst",
+  "gold_in_gms",
+  "valuation",
+  "scheme"
+ ],
+ "fields": [
+  {
+   "fieldname": "net_purchase_value_without_gst",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Net Purchase Value without GST"
+  },
+  {
+   "fieldname": "gold_in_gms",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gold (in Gms)"
+  },
+  {
+   "fieldname": "valuation",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Valuation"
+  },
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "% Scheme"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-19 17:42:28.052999",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Gold Scheme Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

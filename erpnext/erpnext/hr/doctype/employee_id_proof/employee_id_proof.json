@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 07:28:34.455546",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_id",
+  "name_on_id_card",
+  "id_number",
+  "issuance_date",
+  "validity",
+  "authorisation_to_drive"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_id",
+   "fieldtype": "Select",
+   "label": "Type Of ID",
+   "options": "Aadhar Card\nPan Card\nDriving License\nPassport\nVoters Card\nOther"
+  },
+  {
+   "fieldname": "name_on_id_card",
+   "fieldtype": "Data",
+   "label": "Name on ID Card"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "fieldname": "issuance_date",
+   "fieldtype": "Data",
+   "label": "Issuance Date"
+  },
+  {
+   "fieldname": "validity",
+   "fieldtype": "Data",
+   "label": "Validity"
+  },
+  {
+   "fieldname": "authorisation_to_drive",
+   "fieldtype": "Select",
+   "label": "Authorisation to Drive",
+   "options": "2 wheelers\n4 wheelers\nHeavy Vehicles"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-19 07:28:34.455546",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee ID proof",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

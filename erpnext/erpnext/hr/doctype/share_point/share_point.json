@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "autoname": "SP.####",
+ "creation": "2021-07-18 11:46:08.628730",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_position",
+  "department",
+  "add_resumes",
+  "amended_from",
+  "created_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_position",
+   "fieldtype": "Link",
+   "label": "Job Position",
+   "options": "Job Description"
+  },
+  {
+   "fieldname": "add_resumes",
+   "fieldtype": "Table",
+   "label": "Add resumes",
+   "options": "Add resumes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Share Point",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_position.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Department"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Date",
+   "label": "Created Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-28 09:55:28.754473",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Share Point",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "job_position",
+ "track_changes": 1
+}

@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "creation": "2021-07-18 10:37:09.530065",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organisation_name",
+  "group_of_company",
+  "account_group",
+  "type_of_organisation",
+  "type_of_vendor",
+  "vendor_code",
+  "website",
+  "visiting_card_front",
+  "visiting_card_back",
+  "purchase_person_hierarchy",
+  "approved_by",
+  "address_section",
+  "data_13",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "organisation_name",
+   "fieldtype": "Data",
+   "label": "Organisation Name"
+  },
+  {
+   "fieldname": "group_of_company",
+   "fieldtype": "Data",
+   "label": "Group Of Company"
+  },
+  {
+   "fieldname": "account_group",
+   "fieldtype": "Select",
+   "label": "Account Group",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "type_of_organisation",
+   "fieldtype": "Select",
+   "label": "Type of Organisation",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "type_of_vendor",
+   "fieldtype": "Select",
+   "label": "Type of Vendor",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "vendor_code",
+   "fieldtype": "Data",
+   "label": "Vendor Code"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "visiting_card_front",
+   "fieldtype": "Attach",
+   "label": "Visiting Card Front"
+  },
+  {
+   "fieldname": "visiting_card_back",
+   "fieldtype": "Attach",
+   "label": "Visiting Card Back"
+  },
+  {
+   "fieldname": "purchase_person_hierarchy",
+   "fieldtype": "Data",
+   "label": "Purchase person Hierarchy"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee 2"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "data_13",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vendor",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-08-04 09:44:44.508850",
+ "modified_by": "Administrator",
+ "module": "Buying",
+ "name": "Vendor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

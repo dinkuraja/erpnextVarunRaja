@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 17:22:39.578032",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "scheme_name",
+  "scheme_type",
+  "scheme_sub_type",
+  "customer_type",
+  "start_date",
+  "end_date",
+  "gold_rate_per_gram",
+  "payment_condition_in_days",
+  "terms_and_conditions",
+  "scheme_details_section",
+  "add_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "scheme_name",
+   "fieldtype": "Data",
+   "label": "Scheme Name"
+  },
+  {
+   "fieldname": "scheme_type",
+   "fieldtype": "Select",
+   "label": "Scheme Type",
+   "options": "Quarterly\nHalf Yearly\nYearly"
+  },
+  {
+   "fieldname": "scheme_sub_type",
+   "fieldtype": "Select",
+   "label": "Scheme Sub Type",
+   "options": "Gold Scheme\nGift Scheme\nTour Scheme"
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Select",
+   "label": "Customer Type",
+   "options": "Distributor\nDirect Dealer\nIndirect Dealer\nProject Partner"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "depends_on": "eval:doc.scheme_sub_type == 'Gold Scheme'",
+   "fieldname": "gold_rate_per_gram",
+   "fieldtype": "Int",
+   "label": "Gold Rate (per Gram)"
+  },
+  {
+   "fieldname": "payment_condition_in_days",
+   "fieldtype": "Int",
+   "label": "Payment Condition (in Days)"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Small Text",
+   "label": "Terms And Conditions"
+  },
+  {
+   "fieldname": "scheme_details_section",
+   "fieldtype": "Section Break",
+   "label": "Scheme Details"
+  },
+  {
+   "fieldname": "add_details",
+   "fieldtype": "Table",
+   "label": "Add Details",
+   "options": "Gold Scheme Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-19 17:30:18.246220",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Schemes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

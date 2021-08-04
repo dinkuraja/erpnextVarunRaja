@@ -1,0 +1,324 @@
+{
+ "actions": [],
+ "autoname": "JD.####",
+ "creation": "2021-07-18 11:25:12.026695",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "position_title",
+  "business_unit",
+  "department",
+  "department_manager",
+  "requested_by",
+  "head_of_department",
+  "head_of_department_position_title",
+  "hr_spoc",
+  "no_of_position",
+  "location",
+  "job_category",
+  "reason_for_hiring",
+  "appointment_type",
+  "hiring_type",
+  "position_type",
+  "travel_required_percentage",
+  "training_required",
+  "employee_grade",
+  "employee_level",
+  "total_experience",
+  "relevant_experience",
+  "earliest_joining_date",
+  "min_salary",
+  "max_salary",
+  "organisation_cost_unit",
+  "annual_budget",
+  "position_rervenue_generation",
+  "subject",
+  "position_purpose",
+  "alternative_scenarios",
+  "key_responsibilites",
+  "education_and_qualification",
+  "preferred_skills",
+  "other_details",
+  "posting_expire",
+  "external_posting_url",
+  "internal_posting_url",
+  "company_email",
+  "recruiter_email",
+  "attach_supporting_documentation",
+  "approved_by",
+  "approved_date",
+  "last_updated_by",
+  "amended_from",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "position_title",
+   "fieldtype": "Data",
+   "label": "Position Title"
+  },
+  {
+   "fieldname": "business_unit",
+   "fieldtype": "Select",
+   "label": "Business Unit",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "department_manager",
+   "fieldtype": "Link",
+   "label": "Department Manager",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "head_of_department",
+   "fieldtype": "Link",
+   "label": "Head Of Department",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "head_of_department_position_title",
+   "fieldtype": "Data",
+   "label": "Head of Department Position Title"
+  },
+  {
+   "fieldname": "hr_spoc",
+   "fieldtype": "Link",
+   "label": "HR Spoc",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "no_of_position",
+   "fieldtype": "Data",
+   "label": "No Of position"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "job_category",
+   "fieldtype": "Select",
+   "label": "Job Category",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "reason_for_hiring",
+   "fieldtype": "Data",
+   "label": "Reason For Hiring"
+  },
+  {
+   "fieldname": "appointment_type",
+   "fieldtype": "Select",
+   "label": "Appointment Type",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "hiring_type",
+   "fieldtype": "Select",
+   "label": "Hiring Type",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "position_type",
+   "fieldtype": "Select",
+   "label": "Position Type",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "travel_required_percentage",
+   "fieldtype": "Data",
+   "label": "Travel Required Percentage"
+  },
+  {
+   "fieldname": "training_required",
+   "fieldtype": "Select",
+   "label": "Training Required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "employee_grade",
+   "fieldtype": "Data",
+   "label": "Employee Grade"
+  },
+  {
+   "fieldname": "employee_level",
+   "fieldtype": "Data",
+   "label": "Employee Level"
+  },
+  {
+   "fieldname": "total_experience",
+   "fieldtype": "Data",
+   "label": "Total Experience"
+  },
+  {
+   "fieldname": "relevant_experience",
+   "fieldtype": "Data",
+   "label": "Relevant Experience"
+  },
+  {
+   "fieldname": "earliest_joining_date",
+   "fieldtype": "Date",
+   "label": "Earliest Joining Date"
+  },
+  {
+   "fieldname": "min_salary",
+   "fieldtype": "Data",
+   "label": "Min Salary"
+  },
+  {
+   "fieldname": "max_salary",
+   "fieldtype": "Data",
+   "label": "Max Salary"
+  },
+  {
+   "fieldname": "organisation_cost_unit",
+   "fieldtype": "Data",
+   "label": "Organisation Cost Unit"
+  },
+  {
+   "fieldname": "annual_budget",
+   "fieldtype": "Data",
+   "label": "Annual Budget"
+  },
+  {
+   "fieldname": "position_rervenue_generation",
+   "fieldtype": "Data",
+   "label": "Position Rervenue Generation"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "position_purpose",
+   "fieldtype": "Small Text",
+   "label": "Position Purpose"
+  },
+  {
+   "fieldname": "alternative_scenarios",
+   "fieldtype": "Small Text",
+   "label": "Alternative Scenarios"
+  },
+  {
+   "fieldname": "key_responsibilites",
+   "fieldtype": "Small Text",
+   "label": "Key Responsibilites"
+  },
+  {
+   "fieldname": "education_and_qualification",
+   "fieldtype": "Small Text",
+   "label": "Education and Qualification"
+  },
+  {
+   "fieldname": "preferred_skills",
+   "fieldtype": "Small Text",
+   "label": "Preferred Skills"
+  },
+  {
+   "fieldname": "other_details",
+   "fieldtype": "Small Text",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "posting_expire",
+   "fieldtype": "Date",
+   "label": "Posting Expire"
+  },
+  {
+   "fieldname": "external_posting_url",
+   "fieldtype": "Data",
+   "label": "External Posting URL"
+  },
+  {
+   "fieldname": "internal_posting_url",
+   "fieldtype": "Data",
+   "label": "Internal Posting URL"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Company Email"
+  },
+  {
+   "fieldname": "recruiter_email",
+   "fieldtype": "Data",
+   "label": "Recruiter Email"
+  },
+  {
+   "fieldname": "attach_supporting_documentation",
+   "fieldtype": "Attach",
+   "label": "Attach Supporting Documentation"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "last_updated_by",
+   "fieldtype": "Link",
+   "label": "Last Updated By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Requisition Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-28 08:38:08.115773",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Requisition Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 16:43:22.703365",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_type",
+  "customer",
+  "duration",
+  "schemes_type",
+  "tour_scheme_file",
+  "gold_scheme_file",
+  "gift_scheme_file",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Customer",
+   "options": "Customer Multiselect"
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Customer Type",
+   "options": "Company\nIndividual"
+  },
+  {
+   "fieldname": "schemes_type",
+   "fieldtype": "Select",
+   "label": "Schemes Type",
+   "options": "Gold\nGift\nTour\nProduct Liquidation"
+  },
+  {
+   "depends_on": "eval:doc.schemes_type == 'Tour'",
+   "fieldname": "tour_scheme_file",
+   "fieldtype": "HTML",
+   "label": "Tour Scheme File",
+   "options": "<a href=\"/private/files/Half Yearly Tour Scheme.xlsx\">Tour Scheme</a>"
+  },
+  {
+   "depends_on": "eval:doc.schemes_type == 'Gold'",
+   "fieldname": "gold_scheme_file",
+   "fieldtype": "HTML",
+   "label": "Gold Scheme File",
+   "options": "<a href=\"/private/files/Half Yearly Gold Scheme.xlsx\">Gold Scheme</a>"
+  },
+  {
+   "depends_on": "eval:doc.schemes_type == 'Gift'",
+   "fieldname": "gift_scheme_file",
+   "fieldtype": "HTML",
+   "label": "Gift Scheme File",
+   "options": "<a href=\"/private/files/Half Yearly Gift Scheme.xlsx\">Gift Scheme</a>"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Duration",
+   "options": "Quarterly\nHalf Yearly\nYearly"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Schemes Formats",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-28 16:19:53.752145",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Schemes Formats",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

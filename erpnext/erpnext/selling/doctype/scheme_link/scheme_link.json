@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 17:52:41.287143",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "scheme",
+  "customer_type",
+  "region",
+  "state",
+  "city",
+  "customer",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "label": "Scheme",
+   "options": "Schemes"
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Select",
+   "label": "Customer Type",
+   "options": "Distributor\nDirect Dealer\nIndirect Dealer\nProject partner"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region ",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "Maharashtra\nGujarat"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Select",
+   "label": "City",
+   "options": "Mumbai\nAhmedabad\nRajkot"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Table",
+   "label": "Customer",
+   "options": "Customer Multiselect"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Scheme Link",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-28 16:46:38.179658",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Scheme Link",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,401 @@
+{
+ "actions": [],
+ "creation": "2021-07-14 08:59:21.491792",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organisation_name",
+  "group_of_company",
+  "account_group",
+  "type_of_organisation",
+  "type_of_customer",
+  "business_type",
+  "website",
+  "visiting_card_front",
+  "visiting_card_back",
+  "sales_person_hierarchy",
+  "approved_by",
+  "address_section",
+  "add_address",
+  "contacts_section",
+  "add_contact",
+  "amended_from",
+  "commercial_section",
+  "credit_limit",
+  "credit_days",
+  "grace_period",
+  "cheque_terms",
+  "bank_details",
+  "security_cheque",
+  "legal_details_section",
+  "pan_number",
+  "tds_number",
+  "tcs_number",
+  "b_to_b",
+  "b_to_c",
+  "export",
+  "iec_number",
+  "currency",
+  "msme_registration",
+  "msme_registration_date",
+  "udayam_registration_number",
+  "customer_belong_to_company",
+  "party_scheme",
+  "group_scheme",
+  "commission",
+  "discount_structure",
+  "cash_discount",
+  "agent_name",
+  "agreement_copy",
+  "transport_details_section",
+  "add_transport",
+  "other_details_section",
+  "office",
+  "showroom_size",
+  "showroom_conditiononing",
+  "showroom_type",
+  "showroom_type_if_other",
+  "presence_in_market",
+  "international_brands",
+  "indian_brands",
+  "local_brands",
+  "other_business",
+  "showroom_image",
+  "special_remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "organisation_name",
+   "fieldtype": "Data",
+   "label": "Organisation Name"
+  },
+  {
+   "fieldname": "group_of_company",
+   "fieldtype": "Data",
+   "label": "Group Of Company"
+  },
+  {
+   "fieldname": "account_group",
+   "fieldtype": "Data",
+   "label": "Account Group"
+  },
+  {
+   "fieldname": "type_of_organisation",
+   "fieldtype": "Data",
+   "label": "Type Of Organisation"
+  },
+  {
+   "fieldname": "type_of_customer",
+   "fieldtype": "Data",
+   "label": "Type Of Customer"
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Data",
+   "label": "Business Type"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "visiting_card_front",
+   "fieldtype": "Data",
+   "label": "Visiting Card Front"
+  },
+  {
+   "fieldname": "visiting_card_back",
+   "fieldtype": "Data",
+   "label": "Visiting Card Back"
+  },
+  {
+   "fieldname": "sales_person_hierarchy",
+   "fieldtype": "Data",
+   "label": "Sales Person Hierarchy"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "add_address",
+   "fieldtype": "Table",
+   "label": "Add Address",
+   "options": "Customer Address"
+  },
+  {
+   "fieldname": "contacts_section",
+   "fieldtype": "Section Break",
+   "label": "Contacts"
+  },
+  {
+   "fieldname": "add_contact",
+   "fieldtype": "Table",
+   "label": "Add Contact",
+   "options": "Customer Contact"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "New Customer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "commercial_section",
+   "fieldtype": "Section Break",
+   "label": "Commercial"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Data",
+   "label": "Credit Limit"
+  },
+  {
+   "fieldname": "credit_days",
+   "fieldtype": "Data",
+   "label": "Credit Days"
+  },
+  {
+   "fieldname": "grace_period",
+   "fieldtype": "Data",
+   "label": "Grace Period"
+  },
+  {
+   "fieldname": "cheque_terms",
+   "fieldtype": "Data",
+   "label": "Cheque Terms"
+  },
+  {
+   "fieldname": "bank_details",
+   "fieldtype": "Link",
+   "label": "Bank Details",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "security_cheque",
+   "fieldtype": "Select",
+   "label": "Security Cheque",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "legal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Details"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "Pan Number"
+  },
+  {
+   "fieldname": "tds_number",
+   "fieldtype": "Data",
+   "label": "TDS Number"
+  },
+  {
+   "fieldname": "tcs_number",
+   "fieldtype": "Data",
+   "label": "TCS Number"
+  },
+  {
+   "fieldname": "b_to_b",
+   "fieldtype": "Select",
+   "label": "B TO B",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "b_to_c",
+   "fieldtype": "Select",
+   "label": "B To C",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "export",
+   "fieldtype": "Select",
+   "label": "Export",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "iec_number",
+   "fieldtype": "Data",
+   "label": "IEC Number"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "msme_registration",
+   "fieldtype": "Select",
+   "label": "MSME Registration",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "msme_registration_date",
+   "fieldtype": "Date",
+   "label": "MSME Registration Date"
+  },
+  {
+   "fieldname": "udayam_registration_number",
+   "fieldtype": "Data",
+   "label": "Udayam Registration Number"
+  },
+  {
+   "fieldname": "customer_belong_to_company",
+   "fieldtype": "Select",
+   "label": "Customer Belong To Company",
+   "options": "Distributor\nDirect Dealer\nIndirect Dealer\nProject Partner"
+  },
+  {
+   "fieldname": "party_scheme",
+   "fieldtype": "Select",
+   "label": "Party Scheme",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "group_scheme",
+   "fieldtype": "Select",
+   "label": "Group Scheme",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Select",
+   "label": "Commission",
+   "options": "Yes\nno"
+  },
+  {
+   "fieldname": "discount_structure",
+   "fieldtype": "Data",
+   "label": "Discount Structure"
+  },
+  {
+   "fieldname": "cash_discount",
+   "fieldtype": "Data",
+   "label": "Cash Discount"
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "label": "Agent Name"
+  },
+  {
+   "fieldname": "agreement_copy",
+   "fieldtype": "Attach",
+   "label": "Agreement Copy"
+  },
+  {
+   "fieldname": "transport_details_section",
+   "fieldtype": "Section Break",
+   "label": "Transport Details"
+  },
+  {
+   "fieldname": "add_transport",
+   "fieldtype": "Table",
+   "label": "Add Transport",
+   "options": "Transport Details"
+  },
+  {
+   "fieldname": "other_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Data",
+   "label": "Office"
+  },
+  {
+   "fieldname": "showroom_size",
+   "fieldtype": "Data",
+   "label": "Showroom Size"
+  },
+  {
+   "fieldname": "showroom_conditiononing",
+   "fieldtype": "Data",
+   "label": "Showroom Conditiononing"
+  },
+  {
+   "fieldname": "showroom_type",
+   "fieldtype": "Data",
+   "label": "Showroom Type"
+  },
+  {
+   "fieldname": "showroom_type_if_other",
+   "fieldtype": "Data",
+   "label": "Showroom Type if Other"
+  },
+  {
+   "fieldname": "presence_in_market",
+   "fieldtype": "Data",
+   "label": "Presence in Market"
+  },
+  {
+   "fieldname": "international_brands",
+   "fieldtype": "Data",
+   "label": "International Brands"
+  },
+  {
+   "fieldname": "indian_brands",
+   "fieldtype": "Data",
+   "label": "Indian Brands"
+  },
+  {
+   "fieldname": "local_brands",
+   "fieldtype": "Data",
+   "label": "Local Brands"
+  },
+  {
+   "fieldname": "other_business",
+   "fieldtype": "Data",
+   "label": "Other Business"
+  },
+  {
+   "fieldname": "showroom_image",
+   "fieldtype": "Attach Image",
+   "label": "Showroom Image"
+  },
+  {
+   "fieldname": "special_remark",
+   "fieldtype": "Small Text",
+   "label": "Special Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-14 09:20:56.536866",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "New Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

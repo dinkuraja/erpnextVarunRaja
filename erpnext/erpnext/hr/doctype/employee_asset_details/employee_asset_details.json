@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 07:29:02.745431",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_asset",
+  "model_number",
+  "serial_number",
+  "imei_number",
+  "assigned_date",
+  "approved_by",
+  "any_accessories",
+  "any_other_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_asset",
+   "fieldtype": "Select",
+   "label": "Type Of Asset"
+  },
+  {
+   "fieldname": "model_number",
+   "fieldtype": "Data",
+   "label": "Model Number"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "imei_number",
+   "fieldtype": "Data",
+   "label": "IMEI Number"
+  },
+  {
+   "fieldname": "assigned_date",
+   "fieldtype": "Date",
+   "label": "Assigned Date"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "any_accessories",
+   "fieldtype": "Data",
+   "label": "Any Accessories"
+  },
+  {
+   "fieldname": "any_other_details",
+   "fieldtype": "Data",
+   "label": "Any other Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-19 07:29:02.745431",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Asset Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

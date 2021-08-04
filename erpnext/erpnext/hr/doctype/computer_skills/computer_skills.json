@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 07:30:39.158475",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skill_type",
+  "result"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Skill Type",
+   "options": "MS Word\nMS Excel\nMS PowerPoint\nAutoCad\nCommunication and collaboration tools like skype\nAccounting Software\nSocial Media",
+   "reqd": 1
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Result",
+   "options": "Basic\nIntermediate\nAdvanced\nProficient",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-19 07:30:39.158475",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Computer Skills",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

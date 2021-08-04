@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "creation": "2021-07-19 10:02:41.527964",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "training_name",
+  "employees",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "training_name",
+   "fieldtype": "Link",
+   "label": "Training Name",
+   "options": "Training Program"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Table MultiSelect",
+   "label": "Employees",
+   "options": "Employee Multitable"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-19 10:09:50.715536",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Training Request for Employees",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "creation": "2021-07-14 09:17:48.107945",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_transport",
+  "payment",
+  "transporter_name",
+  "person_name",
+  "booking_office",
+  "gst_number",
+  "address_type",
+  "shop_number_and_building_name",
+  "street_name",
+  "area",
+  "landmark",
+  "country",
+  "state",
+  "district",
+  "city",
+  "pin_code",
+  "geo_tagging",
+  "telephone_business",
+  "mobile_business",
+  "whatsaap_number",
+  "email_business"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_transport",
+   "fieldtype": "Data",
+   "label": "Type of Transport"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Select",
+   "label": "Payment",
+   "options": "To Pay\nPaid\nOthers"
+  },
+  {
+   "fieldname": "transporter_name",
+   "fieldtype": "Data",
+   "label": "Transporter Name"
+  },
+  {
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "label": "Person Name"
+  },
+  {
+   "fieldname": "booking_office",
+   "fieldtype": "Data",
+   "label": "Booking Office"
+  },
+  {
+   "fieldname": "gst_number",
+   "fieldtype": "Data",
+   "label": "GST Number"
+  },
+  {
+   "fieldname": "address_type",
+   "fieldtype": "Data",
+   "label": "Address Type"
+  },
+  {
+   "fieldname": "shop_number_and_building_name",
+   "fieldtype": "Data",
+   "label": "Shop Number and Building Name"
+  },
+  {
+   "fieldname": "street_name",
+   "fieldtype": "Data",
+   "label": "Street Name"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "landmark",
+   "fieldtype": "Data",
+   "label": "Landmark"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "geo_tagging",
+   "fieldtype": "Data",
+   "label": "Geo Tagging"
+  },
+  {
+   "fieldname": "telephone_business",
+   "fieldtype": "Data",
+   "label": "Telephone (Business)"
+  },
+  {
+   "fieldname": "mobile_business",
+   "fieldtype": "Data",
+   "label": "Mobile (Business)"
+  },
+  {
+   "fieldname": "whatsaap_number",
+   "fieldtype": "Data",
+   "label": "Whatsaap Number"
+  },
+  {
+   "fieldname": "email_business",
+   "fieldtype": "Data",
+   "label": "Email (Business)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-14 09:17:48.107945",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Transport Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

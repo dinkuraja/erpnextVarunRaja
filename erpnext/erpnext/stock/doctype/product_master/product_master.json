@@ -1,0 +1,682 @@
+{
+ "actions": [],
+ "creation": "2021-07-18 10:58:15.567702",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_code",
+  "product_name",
+  "product_alternate_name",
+  "product_description",
+  "product_material_contains",
+  "country_of_origin",
+  "product_type",
+  "product_unit",
+  "finish",
+  "size",
+  "category",
+  "product_group",
+  "sub_group",
+  "brand_name",
+  "rate_shon_in_invoice",
+  "is_sellable",
+  "combo_product",
+  "maintain_inventory",
+  "product_source",
+  "product_image",
+  "delivery_schedule_days",
+  "min_level_stock",
+  "max_level_stock",
+  "hsn_code",
+  "hsn_description",
+  "bcd",
+  "gst",
+  "gst_effective_date",
+  "mrp_rate",
+  "mrp_distributor_discount",
+  "mrp_dealer_discount",
+  "product_family",
+  "incentives",
+  "product_scheme",
+  "code_creation_person",
+  "approved_by",
+  "special_remark",
+  "design_section",
+  "company_product_catelog",
+  "company_instruction_papes",
+  "product_autocadsolid_work",
+  "product_accessories",
+  "product_box_design",
+  "master_box_design",
+  "product_gross_weight",
+  "product_net_weight",
+  "product_logo",
+  "single_box_quantity",
+  "single_box_weight",
+  "single_box_mrp_label",
+  "master_box_quantity",
+  "master_box_weight",
+  "master_box_label",
+  "product_width",
+  "product_height",
+  "product_lenght",
+  "product_dimension",
+  "box_cbm_unit",
+  "box_cbm_width",
+  "box_cbm_height",
+  "box_cbm_length",
+  "spare_part_code",
+  "spare_part_units",
+  "spare_part_details",
+  "fragile",
+  "vendor_details_section",
+  "vendor",
+  "vendor_product_code",
+  "vendor_product_cost",
+  "cost_type",
+  "currency",
+  "product_landing_cost_inr",
+  "vendor_product_catelog",
+  "vendor_instruction_paper",
+  "product_agreement_copy",
+  "product_agreement_start_date",
+  "product_agreement_end_date",
+  "warranty_certificate",
+  "warranty_certificate_start_date",
+  "warranty_certificate_end_date",
+  "warranty_days",
+  "replacement_days",
+  "is_primary",
+  "mould_cost",
+  "mould_cost_currency",
+  "mould_start_date",
+  "group_mould",
+  "mould_cost_criteria",
+  "mould_refund_breakup",
+  "mould_refundable_date",
+  "sample_tested",
+  "gateway_and_training_section",
+  "business_opportunity",
+  "product_one_pager",
+  "new_product_request_form",
+  "training_presentation",
+  "voc_form",
+  "marketing_collaterals",
+  "forecast_from_sale_team",
+  "sample_available",
+  "training_sales_staff",
+  "training_service_staff",
+  "upload_to_website",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_code",
+   "fieldtype": "Data",
+   "label": "Product Code"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "product_alternate_name",
+   "fieldtype": "Data",
+   "label": "Product Alternate Name"
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Small Text",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "product_material_contains",
+   "fieldtype": "Small Text",
+   "label": "Product Material Contains"
+  },
+  {
+   "fieldname": "country_of_origin",
+   "fieldtype": "Data",
+   "label": "Country of Origin"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Data",
+   "label": "Product Type"
+  },
+  {
+   "fieldname": "product_unit",
+   "fieldtype": "Data",
+   "label": "Product Unit"
+  },
+  {
+   "fieldname": "finish",
+   "fieldtype": "Data",
+   "label": "Finish"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "product_group",
+   "fieldtype": "Data",
+   "label": "Product Group"
+  },
+  {
+   "fieldname": "sub_group",
+   "fieldtype": "Data",
+   "label": "Sub Group"
+  },
+  {
+   "fieldname": "brand_name",
+   "fieldtype": "Data",
+   "label": "Brand Name"
+  },
+  {
+   "fieldname": "rate_shon_in_invoice",
+   "fieldtype": "Data",
+   "label": "Rate Shon in Invoice"
+  },
+  {
+   "fieldname": "is_sellable",
+   "fieldtype": "Select",
+   "label": "Is Sellable",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "combo_product",
+   "fieldtype": "Select",
+   "label": "Combo Product",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "maintain_inventory",
+   "fieldtype": "Data",
+   "label": "Maintain Inventory"
+  },
+  {
+   "fieldname": "product_source",
+   "fieldtype": "Data",
+   "label": "Product Source"
+  },
+  {
+   "fieldname": "product_image",
+   "fieldtype": "Attach Image",
+   "label": "Product Image"
+  },
+  {
+   "fieldname": "delivery_schedule_days",
+   "fieldtype": "Data",
+   "label": "Delivery Schedule (Days)"
+  },
+  {
+   "fieldname": "min_level_stock",
+   "fieldtype": "Data",
+   "label": "Min Level Stock"
+  },
+  {
+   "fieldname": "max_level_stock",
+   "fieldtype": "Data",
+   "label": "Max Level Stock"
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "label": "HSN Code"
+  },
+  {
+   "fieldname": "hsn_description",
+   "fieldtype": "Data",
+   "label": "HSN Description"
+  },
+  {
+   "fieldname": "bcd",
+   "fieldtype": "Data",
+   "label": "BCD"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Data",
+   "label": "GST"
+  },
+  {
+   "fieldname": "gst_effective_date",
+   "fieldtype": "Date",
+   "label": "GST Effective date"
+  },
+  {
+   "fieldname": "mrp_rate",
+   "fieldtype": "Data",
+   "label": "MRP Rate"
+  },
+  {
+   "fieldname": "mrp_distributor_discount",
+   "fieldtype": "Data",
+   "label": "MRP Distributor Discount"
+  },
+  {
+   "fieldname": "mrp_dealer_discount",
+   "fieldtype": "Data",
+   "label": "MRP Dealer Discount"
+  },
+  {
+   "fieldname": "product_family",
+   "fieldtype": "Select",
+   "label": "Product Family",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "incentives",
+   "fieldtype": "Select",
+   "label": "Incentives",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "product_scheme",
+   "fieldtype": "Select",
+   "label": "Product Scheme",
+   "options": "Yes\nno"
+  },
+  {
+   "fieldname": "code_creation_person",
+   "fieldtype": "Link",
+   "label": "Code Creation Person",
+   "options": "Employee 2"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee 2"
+  },
+  {
+   "fieldname": "special_remark",
+   "fieldtype": "Small Text",
+   "label": "Special Remark"
+  },
+  {
+   "fieldname": "design_section",
+   "fieldtype": "Section Break",
+   "label": "Design"
+  },
+  {
+   "fieldname": "company_product_catelog",
+   "fieldtype": "Attach",
+   "label": "Company Product Catelog"
+  },
+  {
+   "fieldname": "company_instruction_papes",
+   "fieldtype": "Attach",
+   "label": "Company Instruction Papes"
+  },
+  {
+   "fieldname": "product_autocadsolid_work",
+   "fieldtype": "Attach",
+   "label": "Product AutoCad/Solid Work"
+  },
+  {
+   "fieldname": "product_accessories",
+   "fieldtype": "Attach",
+   "label": "Product Accessories"
+  },
+  {
+   "fieldname": "product_box_design",
+   "fieldtype": "Attach",
+   "label": "Product Box Design"
+  },
+  {
+   "fieldname": "master_box_design",
+   "fieldtype": "Attach",
+   "label": "Master Box Design"
+  },
+  {
+   "fieldname": "product_gross_weight",
+   "fieldtype": "Data",
+   "label": "Product Gross Weight"
+  },
+  {
+   "fieldname": "product_net_weight",
+   "fieldtype": "Data",
+   "label": "Product Net Weight"
+  },
+  {
+   "fieldname": "product_logo",
+   "fieldtype": "Attach",
+   "label": "Product Logo"
+  },
+  {
+   "fieldname": "single_box_quantity",
+   "fieldtype": "Data",
+   "label": "Single Box Quantity"
+  },
+  {
+   "fieldname": "single_box_weight",
+   "fieldtype": "Data",
+   "label": "Single Box Weight"
+  },
+  {
+   "fieldname": "single_box_mrp_label",
+   "fieldtype": "Attach",
+   "label": "Single Box MRP Label"
+  },
+  {
+   "fieldname": "master_box_quantity",
+   "fieldtype": "Data",
+   "label": "Master Box Quantity"
+  },
+  {
+   "fieldname": "master_box_weight",
+   "fieldtype": "Data",
+   "label": "Master Box Weight"
+  },
+  {
+   "fieldname": "master_box_label",
+   "fieldtype": "Attach",
+   "label": "Master Box Label"
+  },
+  {
+   "fieldname": "product_width",
+   "fieldtype": "Data",
+   "label": "Product Width"
+  },
+  {
+   "fieldname": "product_height",
+   "fieldtype": "Data",
+   "label": "Product Height"
+  },
+  {
+   "fieldname": "product_lenght",
+   "fieldtype": "Data",
+   "label": "Product Lenght"
+  },
+  {
+   "fieldname": "product_dimension",
+   "fieldtype": "Data",
+   "label": "Product Dimension"
+  },
+  {
+   "fieldname": "box_cbm_unit",
+   "fieldtype": "Select",
+   "label": "Box CBM Unit",
+   "options": "mm\ncm\nmeter"
+  },
+  {
+   "fieldname": "box_cbm_width",
+   "fieldtype": "Data",
+   "label": "Box CBM Width"
+  },
+  {
+   "fieldname": "box_cbm_height",
+   "fieldtype": "Data",
+   "label": "Box CBM Height"
+  },
+  {
+   "fieldname": "box_cbm_length",
+   "fieldtype": "Data",
+   "label": "Box CBM Length"
+  },
+  {
+   "fieldname": "spare_part_code",
+   "fieldtype": "Data",
+   "label": "Spare Part Code"
+  },
+  {
+   "fieldname": "spare_part_units",
+   "fieldtype": "Data",
+   "label": "Spare part Units"
+  },
+  {
+   "fieldname": "spare_part_details",
+   "fieldtype": "Data",
+   "label": "Spare Part Details"
+  },
+  {
+   "fieldname": "fragile",
+   "fieldtype": "Select",
+   "label": "Fragile",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "vendor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vendor Details"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "New Vendor"
+  },
+  {
+   "fieldname": "vendor_product_code",
+   "fieldtype": "Data",
+   "label": "Vendor Product Code"
+  },
+  {
+   "fieldname": "vendor_product_cost",
+   "fieldtype": "Data",
+   "label": "Vendor Product Cost"
+  },
+  {
+   "fieldname": "cost_type",
+   "fieldtype": "Data",
+   "label": "Cost Type"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "product_landing_cost_inr",
+   "fieldtype": "Data",
+   "label": "Product landing Cost (INR)"
+  },
+  {
+   "fieldname": "vendor_product_catelog",
+   "fieldtype": "Attach",
+   "label": "Vendor Product Catelog"
+  },
+  {
+   "fieldname": "vendor_instruction_paper",
+   "fieldtype": "Attach",
+   "label": "Vendor Instruction Paper"
+  },
+  {
+   "fieldname": "product_agreement_copy",
+   "fieldtype": "Attach",
+   "label": "Product Agreement Copy"
+  },
+  {
+   "fieldname": "product_agreement_start_date",
+   "fieldtype": "Date",
+   "label": "Product Agreement Start Date"
+  },
+  {
+   "fieldname": "product_agreement_end_date",
+   "fieldtype": "Date",
+   "label": "Product Agreement End Date"
+  },
+  {
+   "fieldname": "warranty_certificate",
+   "fieldtype": "Attach",
+   "label": "Warranty Certificate"
+  },
+  {
+   "fieldname": "warranty_certificate_start_date",
+   "fieldtype": "Date",
+   "label": "Warranty certificate start Date"
+  },
+  {
+   "fieldname": "warranty_certificate_end_date",
+   "fieldtype": "Date",
+   "label": "Warranty Certificate End Date"
+  },
+  {
+   "fieldname": "warranty_days",
+   "fieldtype": "Data",
+   "label": "Warranty Days"
+  },
+  {
+   "fieldname": "replacement_days",
+   "fieldtype": "Data",
+   "label": "Replacement Days"
+  },
+  {
+   "fieldname": "is_primary",
+   "fieldtype": "Select",
+   "label": "Is Primary",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "mould_cost",
+   "fieldtype": "Data",
+   "label": "Mould Cost"
+  },
+  {
+   "fieldname": "mould_cost_currency",
+   "fieldtype": "Data",
+   "label": "Mould Cost Currency"
+  },
+  {
+   "fieldname": "mould_start_date",
+   "fieldtype": "Date",
+   "label": "Mould Start Date"
+  },
+  {
+   "fieldname": "group_mould",
+   "fieldtype": "Select",
+   "label": "Group Mould",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "mould_cost_criteria",
+   "fieldtype": "Select",
+   "label": "Mould Cost Criteria",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "mould_refund_breakup",
+   "fieldtype": "Data",
+   "label": "Mould Refund Breakup"
+  },
+  {
+   "fieldname": "mould_refundable_date",
+   "fieldtype": "Data",
+   "label": "Mould Refundable Date"
+  },
+  {
+   "fieldname": "sample_tested",
+   "fieldtype": "Select",
+   "label": "Sample Tested",
+   "options": "Yes\nno"
+  },
+  {
+   "fieldname": "gateway_and_training_section",
+   "fieldtype": "Section Break",
+   "label": "Gateway and Training"
+  },
+  {
+   "fieldname": "business_opportunity",
+   "fieldtype": "Attach",
+   "label": "Business Opportunity"
+  },
+  {
+   "fieldname": "product_one_pager",
+   "fieldtype": "Attach",
+   "label": "Product One Pager"
+  },
+  {
+   "fieldname": "new_product_request_form",
+   "fieldtype": "Attach",
+   "label": "New Product request Form"
+  },
+  {
+   "fieldname": "training_presentation",
+   "fieldtype": "Attach",
+   "label": "Training Presentation"
+  },
+  {
+   "fieldname": "voc_form",
+   "fieldtype": "Attach",
+   "label": "VOC Form"
+  },
+  {
+   "fieldname": "marketing_collaterals",
+   "fieldtype": "Attach",
+   "label": "Marketing Collaterals"
+  },
+  {
+   "fieldname": "forecast_from_sale_team",
+   "fieldtype": "Attach",
+   "label": "Forecast From Sale Team"
+  },
+  {
+   "fieldname": "sample_available",
+   "fieldtype": "Select",
+   "label": "Sample Available",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "training_sales_staff",
+   "fieldtype": "Select",
+   "label": "Training Sales Staff ",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "training_service_staff",
+   "fieldtype": "Select",
+   "label": "Training Service Staff",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "upload_to_website",
+   "fieldtype": "Select",
+   "label": "Upload to Website",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Product Master",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-08-04 09:44:45.040817",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Product Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

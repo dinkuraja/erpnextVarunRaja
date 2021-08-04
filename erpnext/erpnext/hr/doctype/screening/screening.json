@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "creation": "2021-07-18 11:50:17.024408",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "applicant_name",
+  "applicant_id",
+  "email",
+  "status",
+  "current_status",
+  "phone",
+  "mobile",
+  "highest_qualification",
+  "job_resources",
+  "source_or_referred_by",
+  "interview_date",
+  "business_unit",
+  "department",
+  "proposal_salary",
+  "expected_salary",
+  "availablity",
+  "cv",
+  "hr_spoc",
+  "other_attachments",
+  "interview_taker",
+  "interview_mode",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "applicant_id",
+   "fieldtype": "Data",
+   "label": "Applicant ID"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Select",
+   "label": "Current Status",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "highest_qualification",
+   "fieldtype": "Select",
+   "label": "Highest Qualification",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "job_resources",
+   "fieldtype": "Select",
+   "label": "Job Resources",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "source_or_referred_by",
+   "fieldtype": "Select",
+   "label": "Source or Referred By",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "business_unit",
+   "fieldtype": "Select",
+   "label": "Business Unit",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "proposal_salary",
+   "fieldtype": "Data",
+   "label": "Proposal Salary"
+  },
+  {
+   "fieldname": "expected_salary",
+   "fieldtype": "Data",
+   "label": "Expected Salary"
+  },
+  {
+   "fieldname": "availablity",
+   "fieldtype": "Date",
+   "label": "Availablity"
+  },
+  {
+   "fieldname": "cv",
+   "fieldtype": "Attach",
+   "label": "CV"
+  },
+  {
+   "fieldname": "hr_spoc",
+   "fieldtype": "Link",
+   "label": "HR Spoc",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "other_attachments",
+   "fieldtype": "Attach",
+   "label": "Other Attachments"
+  },
+  {
+   "fieldname": "interview_taker",
+   "fieldtype": "Link",
+   "label": "Interview Taker",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "interview_mode",
+   "fieldtype": "Select",
+   "label": "Interview Mode",
+   "options": "Online\nFace to Face"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Screening",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-18 11:50:17.024408",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Screening",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

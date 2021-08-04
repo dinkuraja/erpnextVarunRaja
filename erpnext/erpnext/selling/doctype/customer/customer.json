@@ -1,0 +1,884 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2013-06-11 14:26:44",
+ "description": "Buyer of Goods and Services.",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_info",
+  "naming_series",
+  "customer_name",
+  "customer_type",
+  "default_bank_account",
+  "lead_name",
+  "visiting_card_front",
+  "visiting_card_back",
+  "image",
+  "column_break0",
+  "account_manager",
+  "customer_group",
+  "territory",
+  "tax_id",
+  "tax_category",
+  "so_required",
+  "dn_required",
+  "disabled",
+  "is_internal_customer",
+  "represents_company",
+  "allowed_to_transact_section",
+  "companies",
+  "currency_and_price_list",
+  "default_currency",
+  "column_break_14",
+  "default_price_list",
+  "address_contacts",
+  "address_html",
+  "website",
+  "column_break1",
+  "contact_html",
+  "primary_address_and_contact_detail",
+  "customer_primary_contact",
+  "mobile_no",
+  "email_id",
+  "column_break_26",
+  "customer_primary_address",
+  "primary_address",
+  "default_receivable_accounts",
+  "accounts",
+  "credit_limit_section",
+  "payment_terms",
+  "credit_limits",
+  "more_info",
+  "customer_details",
+  "column_break_45",
+  "market_segment",
+  "industry",
+  "language",
+  "column_break_38",
+  "loyalty_program",
+  "loyalty_program_tier",
+  "sales_team_section_break",
+  "default_sales_partner",
+  "default_commission_rate",
+  "sales_team_section",
+  "sales_team",
+  "customer_pos_id",
+  "test",
+  "commercial_section_section",
+  "cheque_terms",
+  "type_of_bank_account",
+  "bank_code",
+  "bank_name",
+  "branch_code",
+  "branch_name",
+  "account_number",
+  "ifsc_code",
+  "swift_code",
+  "beneficiary_name",
+  "bank_address",
+  "security_cheque",
+  "cancelled_cheque_or_statement",
+  "legal_section_section",
+  "tax_withholding_category",
+  "pan",
+  "tds_no",
+  "tcs_no",
+  "b_to_b",
+  "b_to_c",
+  "export",
+  "msme_registration",
+  "registration_date",
+  "udaym_registration_number",
+  "customer_belong_to_company",
+  "party_scheme",
+  "group_scheme",
+  "commission",
+  "discount_structure",
+  "cash_discount",
+  "agent_name",
+  "agreement_copy",
+  "transport_section_section",
+  "add_transport",
+  "other_section_section",
+  "office",
+  "showroom_size",
+  "showroom_conditioning",
+  "showroom_type",
+  "presence_in_market",
+  "international_brand",
+  "indian_brands",
+  "local_brands",
+  "other_business",
+  "showroom_images",
+  "special_remark",
+  "is_frozen"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_info",
+   "fieldtype": "Section Break",
+   "label": "Name and Type",
+   "oldfieldtype": "Section Break",
+   "options": "fa fa-user"
+  },
+  {
+   "default": "CUST-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "CUST-.YYYY.-",
+   "set_only_once": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Full Name Or Organisation Name",
+   "no_copy": 1,
+   "oldfieldname": "customer_name",
+   "oldfieldtype": "Data",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "oldfieldname": "customer_type",
+   "oldfieldtype": "Select",
+   "options": "Proprietorship\nPartnership\nLLP\nPrivate Limited\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_bank_account",
+   "fieldtype": "Link",
+   "label": "Default Company Bank Account",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Link",
+   "label": "From Lead",
+   "no_copy": 1,
+   "oldfieldname": "lead_name",
+   "oldfieldtype": "Link",
+   "options": "Lead",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break0",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "account_manager",
+   "fieldtype": "Link",
+   "label": "Account Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Group",
+   "oldfieldname": "customer_group",
+   "oldfieldtype": "Link",
+   "options": "Customer Group",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Territory",
+   "oldfieldname": "territory",
+   "oldfieldtype": "Link",
+   "options": "Territory",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Link",
+   "label": "Tax Category",
+   "options": "Tax Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_internal_customer",
+   "fieldtype": "Check",
+   "label": "Is Internal Customer"
+  },
+  {
+   "depends_on": "is_internal_customer",
+   "fieldname": "represents_company",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Represents Company",
+   "options": "Company",
+   "unique": 1
+  },
+  {
+   "depends_on": "represents_company",
+   "fieldname": "allowed_to_transact_section",
+   "fieldtype": "Section Break",
+   "label": "Allowed To Transact With"
+  },
+  {
+   "depends_on": "represents_company",
+   "fieldname": "companies",
+   "fieldtype": "Table",
+   "label": "Allowed To Transact With",
+   "options": "Allowed To Transact With"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "currency_and_price_list",
+   "fieldtype": "Section Break",
+   "label": "Currency and Price List"
+  },
+  {
+   "fieldname": "default_currency",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Billing Currency",
+   "no_copy": 1,
+   "options": "Currency"
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Default Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Print Language",
+   "options": "Language"
+  },
+  {
+   "depends_on": "eval:!doc.__islocal",
+   "fieldname": "address_contacts",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact",
+   "options": "fa fa-map-marker"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML",
+   "read_only": 1
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contact HTML",
+   "oldfieldtype": "HTML",
+   "read_only": 1
+  },
+  {
+   "description": "Select, to make the customer searchable with these fields",
+   "fieldname": "primary_address_and_contact_detail",
+   "fieldtype": "Section Break",
+   "label": "Primary Address and Contact Detail"
+  },
+  {
+   "description": "Reselect, if the chosen contact is edited after save",
+   "fieldname": "customer_primary_contact",
+   "fieldtype": "Link",
+   "label": "Customer Primary Contact",
+   "options": "Contact"
+  },
+  {
+   "fetch_from": "customer_primary_contact.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Read Only",
+   "label": "Mobile No"
+  },
+  {
+   "fetch_from": "customer_primary_contact.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Read Only",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Reselect, if the chosen address is edited after save",
+   "fieldname": "customer_primary_address",
+   "fieldtype": "Link",
+   "label": "Customer Primary Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "primary_address",
+   "fieldtype": "Text",
+   "label": "Primary Address",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "default_receivable_accounts",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "description": "Mention if non-standard receivable account",
+   "fieldname": "accounts",
+   "fieldtype": "Table",
+   "label": "Accounts",
+   "options": "Party Account"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "credit_limit_section",
+   "fieldtype": "Section Break",
+   "label": "Credit Limit and Payment Terms"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Link",
+   "label": "Default Payment Terms Template",
+   "options": "Payment Terms Template"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "customer_details",
+   "fieldname": "more_info",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "More Information",
+   "oldfieldtype": "Section Break",
+   "options": "fa fa-file-text"
+  },
+  {
+   "description": "Additional information regarding the customer.",
+   "fieldname": "customer_details",
+   "fieldtype": "Text",
+   "label": "Customer Details",
+   "oldfieldname": "customer_details",
+   "oldfieldtype": "Code"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "market_segment",
+   "fieldtype": "Link",
+   "label": "Market Segment",
+   "options": "Market Segment"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "Industry Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_frozen",
+   "fieldtype": "Check",
+   "label": "Is Frozen"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "column_break_38",
+   "fieldtype": "Section Break",
+   "label": "Loyalty Points"
+  },
+  {
+   "fieldname": "loyalty_program",
+   "fieldtype": "Link",
+   "label": "Loyalty Program",
+   "no_copy": 1,
+   "options": "Loyalty Program"
+  },
+  {
+   "fieldname": "loyalty_program_tier",
+   "fieldtype": "Data",
+   "label": "Loyalty Program Tier",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "default_sales_partner",
+   "fieldname": "sales_team_section_break",
+   "fieldtype": "Section Break",
+   "label": "Sales Partner and Commission",
+   "oldfieldtype": "Section Break",
+   "options": "fa fa-group"
+  },
+  {
+   "fieldname": "default_sales_partner",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Sales Partner",
+   "oldfieldname": "default_sales_partner",
+   "oldfieldtype": "Link",
+   "options": "Sales Partner"
+  },
+  {
+   "fieldname": "default_commission_rate",
+   "fieldtype": "Float",
+   "label": "Commission Rate",
+   "oldfieldname": "default_commission_rate",
+   "oldfieldtype": "Currency"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "sales_team",
+   "fieldname": "sales_team_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Team"
+  },
+  {
+   "fieldname": "sales_team",
+   "fieldtype": "Table",
+   "label": "Sales Team Details",
+   "oldfieldname": "sales_team",
+   "oldfieldtype": "Table",
+   "options": "Sales Team"
+  },
+  {
+   "fieldname": "customer_pos_id",
+   "fieldtype": "Data",
+   "label": "Customer POS id",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "credit_limits",
+   "fieldtype": "Table",
+   "label": "Credit Limit",
+   "options": "Customer Credit Limit"
+  },
+  {
+   "default": "0",
+   "fieldname": "so_required",
+   "fieldtype": "Check",
+   "label": "Allow Sales Invoice Creation Without Sales Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "dn_required",
+   "fieldtype": "Check",
+   "label": "Allow Sales Invoice Creation Without Delivery Note"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "tax_withholding_category",
+   "fieldtype": "Link",
+   "label": "Tax Withholding Category",
+   "options": "Tax Withholding Category"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Select",
+   "label": "Test",
+   "options": "Yes\nNo"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "commercial_section_section",
+   "fieldtype": "Section Break",
+   "label": "Commercial Section"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legal_section_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Section"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "transport_section_section",
+   "fieldtype": "Section Break",
+   "label": "Transport Section"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "other_section_section",
+   "fieldtype": "Section Break",
+   "label": "Other Section"
+  },
+  {
+   "fieldname": "cheque_terms",
+   "fieldtype": "Data",
+   "label": "Cheque Terms"
+  },
+  {
+   "fieldname": "type_of_bank_account",
+   "fieldtype": "Select",
+   "label": "Type of Bank Account",
+   "options": "Saving\nCurrent\nID\nCC"
+  },
+  {
+   "fieldname": "bank_code",
+   "fieldtype": "Data",
+   "label": "Bank Code"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "swift_code",
+   "fieldtype": "Data",
+   "label": "Swift Code"
+  },
+  {
+   "fieldname": "beneficiary_name",
+   "fieldtype": "Data",
+   "label": "Beneficiary Name"
+  },
+  {
+   "fieldname": "bank_address",
+   "fieldtype": "Small Text",
+   "label": "Bank Address"
+  },
+  {
+   "fieldname": "security_cheque",
+   "fieldtype": "Select",
+   "label": "Security Cheque",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "cancelled_cheque_or_statement",
+   "fieldtype": "Attach",
+   "label": "Cancelled Cheque or Statement"
+  },
+  {
+   "fieldname": "tds_no",
+   "fieldtype": "Data",
+   "label": "TDS No"
+  },
+  {
+   "fieldname": "tcs_no",
+   "fieldtype": "Data",
+   "label": "TCS No."
+  },
+  {
+   "fieldname": "b_to_b",
+   "fieldtype": "Select",
+   "label": "B To B",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "b_to_c",
+   "fieldtype": "Select",
+   "label": "B To C",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "export",
+   "fieldtype": "Select",
+   "label": "Export",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "msme_registration",
+   "fieldtype": "Select",
+   "label": "MSME Registration",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "udaym_registration_number",
+   "fieldtype": "Data",
+   "label": "UDAYM Registration Number"
+  },
+  {
+   "fieldname": "customer_belong_to_company",
+   "fieldtype": "Select",
+   "label": "Customer Belong To Company",
+   "options": "Distributor\nDirect Dealer\nIndirect Dealer\nProject Partner"
+  },
+  {
+   "fieldname": "party_scheme",
+   "fieldtype": "Select",
+   "label": "Party Scheme",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "group_scheme",
+   "fieldtype": "Select",
+   "label": "Group Scheme",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Select",
+   "label": "Commission",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "discount_structure",
+   "fieldtype": "Data",
+   "label": "Discount Structure"
+  },
+  {
+   "fieldname": "cash_discount",
+   "fieldtype": "Data",
+   "label": "Cash Discount"
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "label": "Agent Name"
+  },
+  {
+   "fieldname": "agreement_copy",
+   "fieldtype": "Attach",
+   "label": "Agreement Copy"
+  },
+  {
+   "fieldname": "add_transport",
+   "fieldtype": "Table",
+   "label": "Add Transport",
+   "options": "Transport Details"
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Select",
+   "label": "office",
+   "options": "Owned\nRented"
+  },
+  {
+   "fieldname": "showroom_size",
+   "fieldtype": "Data",
+   "label": "Showroom Size"
+  },
+  {
+   "fieldname": "showroom_conditioning",
+   "fieldtype": "Select",
+   "label": "Showroom Conditioning",
+   "options": "AC\nNon AC"
+  },
+  {
+   "fieldname": "showroom_type",
+   "fieldtype": "Select",
+   "label": "Showroom Type",
+   "options": "Exclusive\nMix Brand\nModern\nOthers"
+  },
+  {
+   "fieldname": "presence_in_market",
+   "fieldtype": "Date",
+   "label": "Presence In Market"
+  },
+  {
+   "fieldname": "international_brand",
+   "fieldtype": "Table MultiSelect",
+   "label": "International Brand",
+   "options": "International Brands"
+  },
+  {
+   "fieldname": "indian_brands",
+   "fieldtype": "Table MultiSelect",
+   "label": "Indian Brands",
+   "options": "Indian Brands"
+  },
+  {
+   "fieldname": "local_brands",
+   "fieldtype": "Table MultiSelect",
+   "label": "Local Brands",
+   "options": "Local Brands"
+  },
+  {
+   "fieldname": "other_business",
+   "fieldtype": "Data",
+   "label": "Other Business"
+  },
+  {
+   "fieldname": "showroom_images",
+   "fieldtype": "Attach Image",
+   "label": "Showroom Images"
+  },
+  {
+   "fieldname": "special_remark",
+   "fieldtype": "Small Text",
+   "label": "Special Remark"
+  },
+  {
+   "fieldname": "visiting_card_front",
+   "fieldtype": "Attach",
+   "label": "Visiting Card Front"
+  },
+  {
+   "fieldname": "visiting_card_back",
+   "fieldtype": "Attach",
+   "label": "Visiting Card Back"
+  }
+ ],
+ "icon": "fa fa-user",
+ "idx": 363,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-22 09:41:39.318990",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Customer",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "Sales User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "role": "Sales Master Manager",
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager"
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "customer_name,customer_group,territory, mobile_no,primary_address",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "title_field": "customer_name",
+ "track_changes": 1
+}

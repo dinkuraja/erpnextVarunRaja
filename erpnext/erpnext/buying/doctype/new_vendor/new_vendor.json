@@ -1,0 +1,268 @@
+{
+ "actions": [],
+ "creation": "2021-07-18 10:41:20.160623",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organisation_name",
+  "group_of_company",
+  "account_group",
+  "type_of_organisation",
+  "type_of_customer",
+  "business_type",
+  "website",
+  "visiting_card_front",
+  "visiting_card_back",
+  "purchase_person_hierarchy",
+  "approved_by",
+  "address_section",
+  "add_address",
+  "contacts_section",
+  "add_contact",
+  "commercial_section",
+  "credit_limit",
+  "cheque_terms",
+  "bank_details",
+  "legal_details_section",
+  "pan_number",
+  "tds_number",
+  "tcs_number",
+  "b_to_b",
+  "b_to_c",
+  "import",
+  "iec_number",
+  "currency",
+  "msme_registration",
+  "msme_registration_date",
+  "udayam_registration_number",
+  "party_scheme",
+  "commission",
+  "agent_name",
+  "agreement_copy",
+  "transport_details_section",
+  "add_transport"
+ ],
+ "fields": [
+  {
+   "fieldname": "organisation_name",
+   "fieldtype": "Data",
+   "label": "Organisation Name"
+  },
+  {
+   "fieldname": "group_of_company",
+   "fieldtype": "Data",
+   "label": "Group Of Company"
+  },
+  {
+   "fieldname": "account_group",
+   "fieldtype": "Data",
+   "label": "Account Group"
+  },
+  {
+   "fieldname": "type_of_organisation",
+   "fieldtype": "Data",
+   "label": "Type Of Organisation"
+  },
+  {
+   "fieldname": "type_of_customer",
+   "fieldtype": "Data",
+   "label": "Type Of Customer"
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Data",
+   "label": "Business Type"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "visiting_card_front",
+   "fieldtype": "Data",
+   "label": "Visiting Card Front"
+  },
+  {
+   "fieldname": "visiting_card_back",
+   "fieldtype": "Data",
+   "label": "Visiting Card Back"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "add_address",
+   "fieldtype": "Table",
+   "label": "Add Address",
+   "options": "Vendor Address"
+  },
+  {
+   "fieldname": "contacts_section",
+   "fieldtype": "Section Break",
+   "label": "Contacts"
+  },
+  {
+   "fieldname": "add_contact",
+   "fieldtype": "Table",
+   "label": "Add Contact",
+   "options": "Vendor Contact"
+  },
+  {
+   "fieldname": "commercial_section",
+   "fieldtype": "Section Break",
+   "label": "Commercial"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Data",
+   "label": "Credit Limit"
+  },
+  {
+   "fieldname": "cheque_terms",
+   "fieldtype": "Data",
+   "label": "Cheque Terms"
+  },
+  {
+   "fieldname": "bank_details",
+   "fieldtype": "Link",
+   "label": "Bank Details",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "legal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Details"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "Pan Number"
+  },
+  {
+   "fieldname": "tds_number",
+   "fieldtype": "Data",
+   "label": "TDS Number"
+  },
+  {
+   "fieldname": "tcs_number",
+   "fieldtype": "Data",
+   "label": "TCS Number"
+  },
+  {
+   "fieldname": "b_to_b",
+   "fieldtype": "Select",
+   "label": "B TO B",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "b_to_c",
+   "fieldtype": "Select",
+   "label": "B To C",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "iec_number",
+   "fieldtype": "Data",
+   "label": "IEC Number"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "msme_registration",
+   "fieldtype": "Select",
+   "label": "MSME Registration",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "msme_registration_date",
+   "fieldtype": "Date",
+   "label": "MSME Registration Date"
+  },
+  {
+   "fieldname": "udayam_registration_number",
+   "fieldtype": "Data",
+   "label": "Udayam Registration Number"
+  },
+  {
+   "fieldname": "party_scheme",
+   "fieldtype": "Select",
+   "label": "Party Scheme",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "commission",
+   "fieldtype": "Select",
+   "label": "Commission",
+   "options": "Yes\nno"
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "label": "Agent Name"
+  },
+  {
+   "fieldname": "agreement_copy",
+   "fieldtype": "Attach",
+   "label": "Agreement Copy"
+  },
+  {
+   "fieldname": "transport_details_section",
+   "fieldtype": "Section Break",
+   "label": "Transport Details"
+  },
+  {
+   "fieldname": "add_transport",
+   "fieldtype": "Table",
+   "label": "Add Transport",
+   "options": "Transport Details"
+  },
+  {
+   "fieldname": "purchase_person_hierarchy",
+   "fieldtype": "Data",
+   "label": "Purchase Person Hierarchy"
+  },
+  {
+   "fieldname": "import",
+   "fieldtype": "Select",
+   "label": "Import",
+   "options": "Yes\nNo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-18 10:47:29.122110",
+ "modified_by": "Administrator",
+ "module": "Buying",
+ "name": "New Vendor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
